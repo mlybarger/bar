@@ -166,13 +166,14 @@
       <version>${switchyard.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- 
     <dependency>
 	  <groupId>com.example.switchyard</groupId>
   	  <artifactId>bar-artifact</artifactId>
   	  <version>0.0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
-    
+    -->
   </dependencies>
   <build>
     <plugins>
