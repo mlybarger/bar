@@ -10,12 +10,6 @@
     <switchyard.version>1.1.0.Final</switchyard.version>
   </properties>
   <dependencies>
-  	<dependency>
-  		<groupId>com.example.switchyard</groupId>
-  		<artifactId>bar-artifact</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-      <scope>provided</scope>      
-  	</dependency>
     <dependency>
       <groupId>org.switchyard.components</groupId>
       <artifactId>switchyard-component-bean</artifactId>
