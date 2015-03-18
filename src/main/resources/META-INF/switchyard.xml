@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sy:switchyard xmlns:bean="urn:switchyard-component-bean:config:1.1" xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912" xmlns:sy="urn:switchyard-config:switchyard:1.1" name="bar" targetNamespace="urn:com.example.switchyard:bar:1.0">
+  <sca:composite name="bar" targetNamespace="urn:com.example.switchyard:bar:1.0">
+    <sca:component name="BarBean">
+      <bean:implementation.bean class="com.example.switchyard.bar.BarBean"/>
+      <sca:service name="Bar">
+        <sca:interface.java interface="com.example.switchyard.bar.Bar"/>
+      </sca:service>
+    </sca:component>
+    <sca:service name="Bar" promote="BarBean/Bar">
+      <sca:interface.java interface="com.example.switchyard.bar.Bar"/>
+      <sca:binding.sca name="sca1"/>
+    </sca:service>
+  </sca:composite>
+</sy:switchyard>
