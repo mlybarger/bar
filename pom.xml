@@ -209,6 +209,7 @@
             <groupId>org.jboss.as.plugins</groupId>
             <artifactId>jboss-as-maven-plugin</artifactId>
         </plugin>
+        <!-- 
 	<plugin>
 		<artifactId>maven-jar-plugin</artifactId>
 		<configuration>
@@ -219,7 +220,7 @@
 			</archive>           	
 		</configuration>
 	</plugin>
-        
+         -->
     </plugins>
   </build>
 </project>
