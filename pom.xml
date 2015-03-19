@@ -168,6 +168,11 @@
       <scope>provided</scope>
     </dependency>
     -->
+    <dependency>
+    	<groupId>org.switchyard.components</groupId>
+    	<artifactId>switchyard-component-camel</artifactId>
+    	<version>${switchyard.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
