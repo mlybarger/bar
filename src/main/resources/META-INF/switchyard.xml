@@ -11,6 +11,27 @@
       <sca:interface.java interface="com.example.switchyard.bar.Bar"/>
       <sca:binding.sca name="sca1"/>
     </sca:service>
+    <sca:component name="CamelServiceRoute">
+      <camel:implementation.camel>
+        <camel:java class="com.example.switchyard.bar.CamelServiceRoute"/>
+      </camel:implementation.camel>
+      <sca:service name="Camel">
+        <sca:interface.java interface="com.example.switchyard.bar.Camel"/>
+      </sca:service>
+      <sca:reference name="Baz">
+        <sca:interface.java interface="com.example.switchyard.bar.Baz"/>
+      </sca:reference>
+      <sca:reference name="TwoBazBean">
+        <sca:interface.java interface="com.example.switchyard.bar.Baz"/>
+      </sca:reference>
+    </sca:component>
+    <sca:service name="Camel" promote="CamelServiceRoute/Camel">
+      <sca:interface.java interface="com.example.switchyard.bar.Camel"/>
+      <http:binding.http name="http1">
+        <sy:operationSelector operationName="camelMessage"/>
+        <http:contextPath>camel</http:contextPath>
+      </http:binding.http>
+    </sca:service>
     <sca:component name="BazBean">
       <bean:implementation.bean class="com.example.switchyard.bar.BazBean"/>
       <sca:service name="Baz">
@@ -23,26 +44,5 @@
         <sca:interface.java interface="com.example.switchyard.bar.Baz"/>
       </sca:service>
     </sca:component>
-    <sca:component name="BazCamelServiceRoute">
-      <camel:implementation.camel>
-        <camel:java class="com.example.switchyard.bar.BazCamelServiceRoute"/>
-      </camel:implementation.camel>
-      <sca:service name="Camel">
-        <sca:interface.java interface="com.example.switchyard.bar.Camel"/>
-      </sca:service>
-      <sca:reference name="Baz">
-        <sca:interface.java interface="com.example.switchyard.bar.Baz"/>
-      </sca:reference>
-      <sca:reference name="TwoBazBean">
-        <sca:interface.java interface="com.example.switchyard.bar.Baz"/>
-      </sca:reference>
-    </sca:component>
-    <sca:service name="Camel" promote="BazCamelServiceRoute/Camel">
-      <sca:interface.java interface="com.example.switchyard.bar.Camel"/>
-      <http:binding.http name="http1">
-        <sy:operationSelector operationName="message"/>
-        <http:contextPath>camel</http:contextPath>
-      </http:binding.http>
-    </sca:service>
   </sca:composite>
 </sy:switchyard>
