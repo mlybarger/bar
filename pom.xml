@@ -30,18 +30,6 @@
     </dependency>
     <dependency>
       <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-camel-ftp</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-http</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
       <artifactId>switchyard-component-jca</artifactId>
       <version>${switchyard.version}</version>
       <scope>provided</scope>      
@@ -55,18 +43,6 @@
     <dependency>
       <groupId>org.switchyard.components</groupId>
       <artifactId>switchyard-component-camel-jpa</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-camel-mail</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-camel-netty</artifactId>
       <version>${switchyard.version}</version>
       <scope>provided</scope>      
     </dependency>
@@ -87,42 +63,6 @@
       <artifactId>switchyard-component-camel-quartz</artifactId>
       <version>${switchyard.version}</version>
       <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-soap</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-camel-sql</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>provided</scope>      
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-test-mixin-hornetq</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-test-mixin-http</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-test-mixin-naming</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.switchyard.components</groupId>
-      <artifactId>switchyard-component-test-mixin-smooks</artifactId>
-      <version>${switchyard.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.switchyard</groupId>
@@ -171,6 +111,11 @@
     <dependency>
     	<groupId>org.switchyard.components</groupId>
     	<artifactId>switchyard-component-camel</artifactId>
+    	<version>${switchyard.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.switchyard.components</groupId>
+    	<artifactId>switchyard-component-http</artifactId>
     	<version>${switchyard.version}</version>
     </dependency>
   </dependencies>
