@@ -60,15 +60,9 @@
           <file:noop>true</file:noop>
           <file:include>.*txt</file:include>
           <file:idempotent>true</file:idempotent>
-          <file:idempotentRepository>#IFileRepoBean</file:idempotentRepository>
+          <file:idempotentRepository>#FileRepo</file:idempotentRepository>
         </file:consume>
       </file:binding.file>
     </sca:service>
-    <sca:component name="IFileRepoBean">
-      <bean:implementation.bean class="com.example.switchyard.bar.IFileRepoBean"/>
-      <sca:service name="IFileRepo">
-        <sca:interface.java interface="com.example.switchyard.bar.IFileRepo"/>
-      </sca:service>
-    </sca:component>
   </sca:composite>
 </sy:switchyard>
