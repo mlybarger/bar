@@ -7,7 +7,7 @@ import javax.inject.Named;
 import org.apache.camel.processor.idempotent.FileIdempotentRepository;
 import org.apache.camel.util.LRUCache;
 
-@Named("FileRepo")
+@Named
 public class FileRepo extends FileIdempotentRepository  {
 	
 	public FileRepo() {
