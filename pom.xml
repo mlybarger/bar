@@ -149,11 +149,18 @@
           <showDeprecation>true</showDeprecation>
         </configuration>
       </plugin>
+
+	<plugin>
+		<groupId>org.wildfly.plugins</groupId>
+		<artifactId>wildfly-maven-plugin</artifactId>
+		<version>1.1.0.Alpha1</version>
+	</plugin>
+      
+        <!-- 
         <plugin>
             <groupId>org.jboss.as.plugins</groupId>
             <artifactId>jboss-as-maven-plugin</artifactId>
         </plugin>
-        <!-- 
 	<plugin>
 		<artifactId>maven-jar-plugin</artifactId>
 		<configuration>
