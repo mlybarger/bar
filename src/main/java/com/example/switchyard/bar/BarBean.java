@@ -19,4 +19,22 @@ public class BarBean implements Bar {
 		LOG.info("complexMessage():"+ complexMessage.getMessage());
 		return complexMessage.getMessage().toLowerCase();
 	}
+	
+	@Override
+	public boolean sample(String string){
+		LOG.info("sample() - start");
+		return string.isEmpty();
+	}
+
+	@Override
+	public boolean sampleTwo(String input) throws Exception {
+		LOG.info("sampleTwo() - start");
+		return input.isEmpty();
+	}
+
+	@Override
+	public Boolean sampleThree(String input) throws Exception {
+		LOG.info("sampleThree() - start");
+		return input.isEmpty();
+	}
 }
